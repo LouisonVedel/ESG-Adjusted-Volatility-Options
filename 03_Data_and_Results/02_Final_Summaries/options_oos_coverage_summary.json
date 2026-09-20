@@ -1,0 +1,17 @@
+{
+  "oos_rows": 10427685,
+  "oos_tickers": 344,
+  "oos_models": 15,
+  "oos_min": "2010-01-12",
+  "oos_max": "2019-06-28",
+  "option_files": 344,
+  "audit_rows": 344,
+  "files_with_errors": 0,
+  "tickers_with_overlap": 343,
+  "tickers_with_valid_pricing": 343,
+  "total_option_rows": 170601868,
+  "total_overlap_rows": 156288350,
+  "total_valid_pricing_rows": 123297081,
+  "total_atm_valid_rows": 10198397,
+  "runtime_seconds": 3101.62
+}

@@ -1,0 +1,12 @@
+stage,file,status,bytes,notes
+Forecast/OOS,..\03_Volatility_OOS\final\oos_volatility_345_v3.csv,PRESENT,873469734,344 usable tickers; 15 models; strict OOS
+Options,options_panel_342_LOCKED_2026-09-17.csv,PRESENT,46855,342 integrated option tickers
+Merge,oos_options_merged_342.csv,PRESENT,781977522,"3,005,230 observations; 342 tickers; 15 models"
+Pricing,black76_pricing_336.csv,PRESENT,1004225860,"2,172,421 observations; 336 tickers; 15 models"
+Strategy,strategy_signals_336.csv,PRESENT,83449235,"308,603 baseline signals"
+Vega,strategy_signals_vega_hedge_full_336.csv,PRESENT,92690600,"286,634 paired vega-hedged signals"
+Trades,backtest_trades_15models_3horizons_279.csv,PRESENT,194213607,"555,659 realised baseline trades; 278 tickers"
+Capital,portfolio_capital_1m_metrics_15models_3horizons_279.csv,PRESENT,6533,USD 1m reference capital
+Risk,risk_metrics_1m_15models_3horizons_279.csv,PRESENT,9607,45 model-horizon cells
+Robustness,robustness_thresholds_1p0_1p5_2p0.csv,PRESENT,16295,thresholds 1.0/1.5/2.0
+Paired P&L,trade_pnl_paired_esg_vs_benchmark_thresholds.csv,PRESENT,36234,216 paired cells; Holm correction

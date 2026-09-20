@@ -1,0 +1,4 @@
+benchmark_family,N,Tickers,ESG_coef_abs_mispricing,SE,p_value,R2
+GARCH,724568,336,,,,
+GJR-GARCH,724168,336,,,,
+EGARCH,723685,336,,,,

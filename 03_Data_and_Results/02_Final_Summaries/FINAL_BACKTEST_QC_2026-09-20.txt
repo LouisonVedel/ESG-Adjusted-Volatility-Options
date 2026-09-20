@@ -1,0 +1,29 @@
+FINAL BACKTEST QC â€” 2026-09-20
+
+Baseline trades: 555,659
+Tickers traded: 278
+Models: 15
+Horizons: ['10', '20', '5']
+Duplicates: 0
+Critical nulls: 0
+Non-finite numeric values: 0
+Status: {'OK': 555659}
+Entry date range: 2010-07-16 to 2019-06-21
+
+Baseline horizon counts: 5d=265,610; 10d=220,285; 20d=69,764
+
+Figures generated: 14 SVG files covering model P&L, cumulative P&L, $1m capital-normalised performance, drawdowns, direction asymmetry, and paired ESG-vs-benchmark differences.
+
+Capital convention: USD 1,000,000 reference capital; not interpreted as broker margin requirement.
+
+Important: threshold robustness trade files were not found under the expected filenames during this QC; robustness summary CSV exists and must remain the authoritative threshold audit until filenames are reconciled.
+
+Threshold robustness reconciliation (2026-09-20):
+- backtest_trades_threshold_1p0_279.csv: present
+- backtest_trades_threshold_2p0_279.csv: present
+- backtest audit 1.0 / 2.0: present
+- robustness_thresholds_1p0_1p5_2p0.csv: present, 135 data rows + header
+- trade_pnl_paired_esg_vs_benchmark_thresholds.csv: present, 216 data rows + header
+- Threshold trade counts: 1.0 = 905,011; 1.5 = 555,659; 2.0 = 278,864.
+- Paired ESG-vs-benchmark file covers 216 threshold/family/model/horizon/direction cells; Holm-adjusted p-values are retained in the file.
+- The earlier missing-filename warning is resolved: the expected robustness trade files exist under the names above.

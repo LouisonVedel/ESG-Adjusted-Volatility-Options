@@ -1,0 +1,14 @@
+# Restricted/local data
+Data/01_Raw/
+Data/02_Processed/
+Data/03_Rebuild/
+# Python caches
+__pycache__/
+*.pyc
+.venv/
+venv/
+# Temporary files
+*.log
+*.tmp
+*.bak
+*.swp

@@ -1,0 +1,5 @@
+Copyright (c) 2026 Louison Vedel and Joshua Gadron.
+
+This repository contains thesis research code and derived research outputs.
+No license is granted for redistribution or reuse of third-party licensed data,
+including OptionMetrics and Refinitiv Eikon / LSEG data.
