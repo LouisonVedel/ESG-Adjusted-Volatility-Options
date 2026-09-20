@@ -1,7 +1,5 @@
 # Reproducibility and Data Provenance
 
-The empirical pipeline is organised under the thesis Data/03_Rebuild directory.
-
 The volatility stage uses the locked 344-firm forecasting panel and 15-model OOS output. The option stage uses the locked integrated option panel, merged forecast-option observations, Black-76 pricing outputs, signal construction, vega-hedged trade records, and final backtest/QC files.
 
 Equity and market-data fields used in the rebuild were obtained through Refinitiv Eikon / LSEG. The option dataset is sourced from OptionMetrics, while the LSEG forward price is used directly in the Black-76 pricing stage. The USD 1 million capital figure is a reference notional used to express strategy performance on a common scale, not a broker margin requirement.
