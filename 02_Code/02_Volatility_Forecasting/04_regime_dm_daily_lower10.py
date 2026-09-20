@@ -1,3 +1,5 @@
+# This code was developed with the assistance of an AI.
+
 import pandas as pd,numpy as np
 from pathlib import Path
 import statsmodels.api as sm

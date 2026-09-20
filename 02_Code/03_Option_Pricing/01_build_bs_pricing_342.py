@@ -1,3 +1,5 @@
+# This code was developed with the assistance of an AI.
+
 import os, glob, time
 import numpy as np
 import pandas as pd

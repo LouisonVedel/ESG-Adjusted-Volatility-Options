@@ -1,10 +1,12 @@
+# This code was developed with the assistance of an AI.
+
 import pandas as pd, numpy as np, os, sys
 
 BASE=r"C:\Users\Louison Vedel\OneDrive - Audencia\Thèse\Data\03_Rebuild\04_Options_Analysis"
 SRC=os.path.join(BASE,"black76_pricing_336.csv")
 TH=float(sys.argv[1])
 tag=str(TH).replace(".","p")
-OUT=os.path.join(BASE,f"strategy_signals_threshold_{tag}_336.csv")
+OUT=os.path.join(BASE, "strategy_signals_336.csv" if abs(TH-1.5) < 1e-12 else f"strategy_signals_threshold_{tag}_336.csv")
 
 df=pd.read_csv(SRC)
 df["date"]=pd.to_datetime(df.date)

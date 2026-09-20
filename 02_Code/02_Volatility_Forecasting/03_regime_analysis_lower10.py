@@ -1,3 +1,5 @@
+# This code was developed with the assistance of an AI.
+
 import pandas as pd, numpy as np, os
 from pathlib import Path
 ROOT=Path(r'C:\ThesisRebuild')

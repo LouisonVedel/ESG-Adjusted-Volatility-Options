@@ -1,3 +1,5 @@
+# This code was developed with the assistance of an AI.
+
 import pandas as pd, numpy as np, warnings, sys, time, json, traceback
 from pathlib import Path
 from arch import arch_model

@@ -1,3 +1,5 @@
+# This code was developed with the assistance of an AI.
+
 import csv, os, math, collections, time
 BASE=r"C:\Users\Louison Vedel\OneDrive - Audencia\Thèse\Data\03_Rebuild\04_Options_Analysis"
 SIG=os.path.join(BASE,"strategy_signals_vega_hedge_full_336.csv")
@@ -63,14 +65,6 @@ for j,s in enumerate(signals,1):
         path=pdates[i:i+h+1]; exitd=path[-1]
         if not all(allq(ticker,d,tex,tk) and allq(ticker,d,hex,hk) for d in path):
             audit[f"NO_EXACT_QUOTES_{h}"]+=1
-            continue
-        def delta_ok(d):
-            try:
-                return all(quotes[(ticker,ex,k,cp)][d]["delta"] not in ("","nan","NaN") for ex,k in ((tex,tk),(hex,hk)) for cp in ("C","P"))
-            except Exception:
-                return False
-        if not all(delta_ok(d) for d in path):
-            audit[f"NO_DELTA_{h}"]+=1
             continue
         try:
             # entry execution: target follows signal; vega hedge is opposite

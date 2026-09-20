@@ -1,3 +1,5 @@
+# This code was developed with the assistance of an AI.
+
 import os,csv
 base=r'C:\Users\Louison Vedel\OneDrive - Audencia\Thèse\Data\03_Rebuild\04_Options_Analysis'
 files=[

@@ -1,3 +1,5 @@
+# This code was developed with the assistance of an AI.
+
 import pandas as pd, numpy as np
 from scipy.stats import norm
 src=r'C:\ThesisRebuild\04_Options_Analysis\strategy_signals_336.csv'; hp=r'C:\ThesisRebuild\04_Options_Analysis\vega_candidates_all_expiries_342.csv'; out=r'C:\ThesisRebuild\04_Options_Analysis\strategy_signals_vega_hedge_full_336.csv'
