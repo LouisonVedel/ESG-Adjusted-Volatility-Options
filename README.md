@@ -36,7 +36,7 @@ The final sequence is:
 - 03_Data_and_Results — compact audits, summaries, provenance and authoritative outputs
 - 04_Figures — final empirical figures
 
-The code in 02_Code is intentionally restricted to the scripts corresponding to the established final pipeline. Pilot, superseded, patch, debugging and one-off repair scripts remain in the local thesis working directory and are not part of this clean package.
+The codes in 02_Code are intentionally restricted to the scripts corresponding to the established final pipeline. Pilot, superseded, patch, debugging and one-off repair scripts remain in the local thesis working directory and are not part of this clean package.
 
 Each packaged Python script begins with a short provenance note indicating that the code was developed with the assistance of AI.
 
