@@ -3,8 +3,8 @@
 import csv, math, os
 from collections import defaultdict
 BASE=r"C:\Users\Louison Vedel\OneDrive - Audencia\Thèse\Data\03_Rebuild\04_Options_Analysis"
-INP=os.path.join(BASE,"backtest_trades_15models_3horizons_279.csv")
-OUT=os.path.join(BASE,"portfolio_realized_pnl_15models_3horizons_279.csv")
+INP=os.path.join(BASE,"backtest_trades_15models_3horizons_278.csv")
+OUT=os.path.join(BASE,"portfolio_realized_pnl_15models_3horizons_278.csv")
 groups=defaultdict(lambda: defaultdict(float))
 counts=defaultdict(int)
 wins=defaultdict(int)

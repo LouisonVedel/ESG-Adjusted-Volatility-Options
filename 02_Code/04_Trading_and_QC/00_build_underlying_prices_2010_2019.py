@@ -7,7 +7,7 @@ BASE=Path(r'C:\Users\Louison Vedel\OneDrive - Audencia\Thèse\Data\03_Rebuild')
 PFILE=BASE/'02_Prices'/'prices_lseg_345_wide.csv'
 MAP=BASE/'00_Master'/'universe_lseg_mapping.csv'
 SIG=BASE/'04_Options_Analysis'/'strategy_signals_vega_hedge_full_336.csv'
-OUT=BASE/'04_Options_Analysis'/'underlying_prices_2010_2019_279.csv'
+OUT=BASE/'04_Options_Analysis'/'underlying_prices_2010_2019_278.csv'
 AUD=BASE/'04_Options_Analysis'/'underlying_price_coverage_2010_2019.csv'
 
 s=pd.read_csv(SIG,usecols=['ticker','date'])

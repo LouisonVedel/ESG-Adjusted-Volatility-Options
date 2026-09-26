@@ -1,7 +1,7 @@
 # This code was developed with the assistance of an AI.
 
 import csv,collections,os
-p=r"C:\Users\Louison Vedel\OneDrive - Audencia\Thèse\Data\03_Rebuild\04_Options_Analysis\backtest_trades_15models_3horizons_279.csv"
+p=r"C:\Users\Louison Vedel\OneDrive - Audencia\Thèse\Data\03_Rebuild\04_Options_Analysis\backtest_trades_15models_3horizons_278.csv"
 n=0; dup=0; seen=set(); models=set(); hs=collections.Counter(); null=collections.Counter(); bad=0; tick=set()
 with open(p,newline="",encoding="utf-8") as f:
     for r in csv.DictReader(f):

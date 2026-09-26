@@ -4,10 +4,10 @@ import csv, os, math, collections, time
 BASE=r"C:\Users\Louison Vedel\OneDrive - Audencia\Thèse\Data\03_Rebuild\04_Options_Analysis"
 SIG=os.path.join(BASE,"strategy_signals_vega_hedge_full_336.csv")
 QUOTE=os.path.join(BASE,"trade_contract_quotes_2010_2019.csv")
-PRICE=os.path.join(BASE,"underlying_prices_2010_2019_279.csv")
-OUT=os.path.join(BASE,"backtest_trades_15models_3horizons_279.csv")
-SUM=os.path.join(BASE,"backtest_summary_15models_3horizons_279.csv")
-AUD=os.path.join(BASE,"backtest_audit_15models_3horizons_279.csv")
+PRICE=os.path.join(BASE,"underlying_prices_2010_2019_278.csv")
+OUT=os.path.join(BASE,"backtest_trades_15models_3horizons_278.csv")
+SUM=os.path.join(BASE,"backtest_summary_15models_3horizons_278.csv")
+AUD=os.path.join(BASE,"backtest_audit_15models_3horizons_278.csv")
 HORIZONS=(5,10,20); MULT=100.0
 # 1) load signals and relevant exact contract keys
 signals=[]; keys=set(); tickers=set()

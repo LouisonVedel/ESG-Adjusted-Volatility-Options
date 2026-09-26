@@ -16,7 +16,7 @@ Figures generated: 14 SVG files covering model P&L, cumulative P&L, $1m capital-
 
 Capital convention: USD 1,000,000 reference capital; not interpreted as broker margin requirement.
 
-Important: threshold robustness trade files were not found under the expected filenames during this QC; robustness summary CSV exists and must remain the authoritative threshold audit until filenames are reconciled.
+Threshold robustness trade-level files are large external provenance artifacts and are not versioned in the repository. The versioned robustness summary CSV and paired-test CSV are the authoritative repository-level threshold audit.
 
 Threshold robustness reconciliation (2026-09-20):
 - backtest_trades_threshold_1p0_279.csv: present
@@ -26,4 +26,5 @@ Threshold robustness reconciliation (2026-09-20):
 - trade_pnl_paired_esg_vs_benchmark_thresholds.csv: present, 216 data rows + header
 - Threshold trade counts: 1.0 = 905,011; 1.5 = 555,659; 2.0 = 278,864.
 - Paired ESG-vs-benchmark file covers 216 threshold/family/model/horizon/direction cells; Holm-adjusted p-values are retained in the file.
+- The `_279` suffix in the historical threshold-trade artifact names is a legacy pipeline filename and does not denote the final 278-firm realised trading sample.
 - The earlier missing-filename warning is resolved: the expected robustness trade files exist under the names above.
