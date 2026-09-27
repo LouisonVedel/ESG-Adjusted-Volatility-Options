@@ -25,7 +25,9 @@ files = [
 ]
 
 rows = []
-for stage, name, expected_status, notes in files:
+for item in files:
+    stage, name, expected_status, *rest = item
+    notes = rest[-1] if rest else ""
     p = SUMMARY / name
     if expected_status == "PRESENT":
         status = "PRESENT" if p.exists() else "MISSING"
@@ -34,7 +36,6 @@ for stage, name, expected_status, notes in files:
         status = "EXTERNAL"
         size = ""
     rows.append([stage, name, status, size, notes])
-
 out = SUMMARY / "FINAL_EMPIRICAL_RESULTS_INDEX_2026-09-20.csv"
 with out.open("w", newline="", encoding="utf-8") as f:
     w = csv.writer(f)

@@ -12,4 +12,5 @@ Figure_direction_asymmetry_20d_baseline.svg,VALID_NONEMPTY,1484
 Figure_max_drawdown_1m_10d_baseline.svg,VALID_NONEMPTY,1803
 Figure_max_drawdown_1m_20d_baseline.svg,VALID_NONEMPTY,1805
 Figure_max_drawdown_1m_5d_baseline.svg,VALID_NONEMPTY,1803
-Figure_paired_ESG_minus_benchmark_1p5.svg,VALID_NONEMPTY,1910
+Figure_mean_model_total_PnL_thresholds.svg,VALID_NONEMPTY,33925
+Figure_paired_ESG_minus_benchmark_1p5.svg,VALID_NONEMPTY,41476
