@@ -11,12 +11,12 @@ OUT=os.path.join(BASE, "strategy_signals_336.csv" if abs(TH-1.5) < 1e-12 else f"
 df=pd.read_csv(SRC)
 df["date"]=pd.to_datetime(df.date)
 df=df.sort_values(["ticker","model","date"]).copy()
-df["gap"]=df.forecast_vol-df.iv_midpoint
+df["gap"]=df.iv_midpoint-df.forecast_vol
 df["gap_sd"]=df.groupby(["ticker","model"])["gap"].transform(
     lambda s:s.shift(1).rolling(252,min_periods=126).std()
 )
 df["z"]=df.gap/df.gap_sd
-df["signal"]=np.where(df.z>=TH,1,np.where(df.z<=-TH,-1,0))
+df["signal"]=np.where(df.z>=TH,-1,np.where(df.z<=-TH,1,0))
 df=df[df.signal!=0].copy()
 df["direction"]=np.where(df.signal>0,"LONG_VOL","SHORT_VOL")
 df["target_exdate"]=df.exdate
